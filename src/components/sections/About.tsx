@@ -4,8 +4,10 @@ import { User, Target, Sparkles } from 'lucide-react';
 export const About = () => {
   return (
     <section id="about" className="py-20 lg:py-32 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-mesh opacity-30" />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[hsl(280,85%,55%)]/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
