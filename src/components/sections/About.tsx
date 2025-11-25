@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { User, Target, Sparkles } from 'lucide-react';
+import profilePhoto from '@/assets/profile-photo.jpg';
 
 export const About = () => {
   return (
@@ -35,8 +36,12 @@ export const About = () => {
           >
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl transform rotate-6" />
-              <div className="relative w-full h-full rounded-2xl bg-gradient-to-br from-card to-background flex items-center justify-center border-2 border-border shadow-lg">
-                <div className="text-9xl font-bold text-gradient">VK</div>
+              <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-border shadow-lg">
+                <img 
+                  src={profilePhoto} 
+                  alt="Vishnu Kumar Puli" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </motion.div>
