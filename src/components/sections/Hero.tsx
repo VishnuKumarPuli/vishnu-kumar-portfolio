@@ -6,16 +6,17 @@ import heroBg from '@/assets/hero-bg.jpg';
 export const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 z-0 bg-gradient-animated opacity-20" />
+      <div className="absolute inset-0 z-0 bg-gradient-mesh" />
       <div 
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: `url(${heroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.1
+          opacity: 0.05
         }}
       />
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
