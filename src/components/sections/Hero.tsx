@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { Download, MapPin, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.jpg';
-import profilePhoto from '@/assets/profile-photo.jpg';
 
 export const Hero = () => {
   return (
@@ -129,11 +128,9 @@ export const Hero = () => {
             <div className="relative w-full max-w-md">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-3xl opacity-30 animate-pulse" />
               <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center border-4 border-primary/30 shadow-glow">
-                <img 
-                  src={profilePhoto} 
-                  alt="Vishnu Kumar Puli" 
-                  className="w-72 h-72 rounded-full object-cover"
-                />
+                <div className="w-72 h-72 rounded-full bg-gradient-to-br from-card to-background flex items-center justify-center text-8xl font-bold text-gradient">
+                  VKP
+                </div>
               </div>
             </div>
           </motion.div>
