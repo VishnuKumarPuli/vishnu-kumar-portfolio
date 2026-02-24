@@ -32,25 +32,6 @@ export const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative"
-          >
-            <div className="relative w-full aspect-square max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl transform rotate-6" />
-              <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-border shadow-lg">
-                <img 
-                  src={profilePhoto} 
-                  alt="Vishnu Kumar Puli" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
             className="space-y-6"
           >
             <div className="card-gradient p-6 rounded-xl border border-border shadow-md">
@@ -98,6 +79,25 @@ export const About = () => {
                     technologies, I approach every challenge with enthusiasm and dedication.
                   </p>
                 </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative"
+          >
+            <div className="relative w-full aspect-square max-w-md mx-auto">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl transform rotate-6" />
+              <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-border shadow-lg">
+                <img 
+                  src={profilePhoto} 
+                  alt="Vishnu Kumar Puli" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </motion.div>
