@@ -59,7 +59,7 @@ export const Education = () => {
                   index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
                 } pl-12 md:pl-0 md:w-[calc(50%+2rem)]`}
               >
-                <div className="absolute left-4 md:left-1/2 top-6 w-4 h-4 rounded-full bg-primary border-4 border-background transform md:-translate-x-1/2 z-10" />
+                <div className="absolute left-4 md:left-1/2 top-6 w-3 h-3 rounded-full bg-primary transform md:-translate-x-1/2 z-10" />
                 
                 <div className="card-gradient p-6 rounded-xl border border-border shadow-md hover:shadow-lg transition-smooth">
                   <div className="flex items-start gap-4 mb-4">
